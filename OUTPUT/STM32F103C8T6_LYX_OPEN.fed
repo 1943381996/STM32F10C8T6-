@@ -1,0 +1,182 @@
+;#<FEEDBACK># ARM Linker, 5060960: Last Updated: Sat Apr 06 18:15:00 2024
+;VERSION 0.2
+;FILE board.o
+rt_os_tick_callback <= USED 0
+;FILE clock.o
+rt_system_tick_init <= USED 0
+rt_tick_from_millisecond <= USED 0
+rt_tick_increase <= USED 0
+rt_tick_set <= USED 0
+;FILE components.o
+main_thread_entry <= USED 0
+rt_components_init <= USED 0
+;FILE context_rvds.o
+rt_hw_interrupt_thread_switch <= USED 0
+;FILE cpuport.o
+rt_hw_cpu_reset <= USED 0
+rt_hw_cpu_shutdown <= USED 0
+rt_hw_exception_install <= USED 0
+;FILE idle.o
+rt_thread_idle_excute <= USED 0
+rt_thread_idle_gethandler <= USED 0
+;FILE ipc.o
+rt_mb_control <= USED 0
+rt_mb_create <= USED 0
+rt_mb_delete <= USED 0
+rt_mb_detach <= USED 0
+rt_mb_init <= USED 0
+rt_mb_recv <= USED 0
+rt_mb_send <= USED 0
+rt_mb_send_wait <= USED 0
+rt_sem_control <= USED 0
+rt_sem_create <= USED 0
+rt_sem_delete <= USED 0
+rt_sem_detach <= USED 0
+rt_sem_trytake <= USED 0
+;FILE irq.o
+rt_interrupt_enter <= USED 0
+rt_interrupt_get_nest <= USED 0
+rt_interrupt_leave <= USED 0
+;FILE kservice.o
+_rt_errno <= USED 0
+rt_free_align <= USED 0
+rt_get_errno <= USED 0
+rt_malloc_align <= USED 0
+rt_memcmp <= USED 0
+rt_memcpy <= USED 0
+rt_memmove <= USED 0
+rt_set_errno <= USED 0
+rt_snprintf <= USED 0
+rt_sprintf <= USED 0
+rt_strcasecmp <= USED 0
+rt_strcmp <= USED 0
+rt_strdup <= USED 0
+rt_strlen <= USED 0
+rt_strncmp <= USED 0
+rt_strnlen <= USED 0
+rt_strstr <= USED 0
+rt_vsnprintf <= USED 0
+rt_vsprintf <= USED 0
+;FILE lyx_adc.o
+adc_get <= USED 0
+adc_init <= USED 0
+;FILE lyx_clock.o
+CLOCK_int <= USED 0
+;FILE lyx_delay.o
+DWT_Delay <= USED 0
+DWT_Delay_ms <= USED 0
+DWT_Delay_us <= USED 0
+DWT_TS_GET <= USED 0
+DWT_init <= USED 0
+;FILE lyx_dma.o
+DMA_init <= USED 0
+;FILE lyx_fft.o
+FFT_disply <= USED 0
+GetPowerMag <= USED 0
+adc_sample <= USED 0
+wave_frequency_calculate <= USED 0
+;FILE lyx_gpio.o
+gpio_dir <= USED 0
+gpio_get <= USED 0
+gpio_init <= USED 0
+gpio_set <= USED 0
+gpio_toggle <= USED 0
+;FILE lyx_iic.o
+IIC_Ack <= USED 0
+IIC_NAck <= USED 0
+IIC_OLED_init <= USED 0
+IIC_Read_Byte <= USED 0
+IIC_Send_Byte <= USED 0
+IIC_Start <= USED 0
+IIC_Stop <= USED 0
+IIC_Wait_Ack <= USED 0
+;FILE lyx_key.o
+key <= USED 0
+;FILE lyx_oled_iic.o
+OLED_IIC_Clear <= USED 0
+OLED_IIC_DrawPoint <= USED 0
+OLED_IIC_SetCursor <= USED 0
+OLED_IIC_ShowChar <= USED 0
+OLED_IIC_Write_CMD <= USED 0
+OLED_IIC_Write_DAT <= USED 0
+OLED_IIC_dis_bmp <= USED 0
+OLED_IIC_display <= USED 0
+OLED_IIC_fill <= USED 0
+OLED_IIC_full <= USED 0
+OLED_IIC_init <= USED 0
+OLED_IIC_int16 <= USED 0
+OLED_IIC_p6x8str <= USED 0
+OLED_IIC_p8x16str <= USED 0
+OLED_IIC_print_chinese <= USED 0
+OLED_IIC_printf_float <= USED 0
+OLED_IIC_printf_int32 <= USED 0
+OLED_IIC_putpixel <= USED 0
+OLED_IIC_uint16 <= USED 0
+OLED_clrpixel <= USED 0
+oled_IIC_uint16 <= USED 0
+;FILE lyx_oled_spi.o
+OLED_SPI_Clear <= USED 0
+OLED_SPI_SetCursor <= USED 0
+OLED_SPI_Write_CMD <= USED 0
+OLED_SPI_Write_DAT <= USED 0
+OLED_SPI_full <= USED 0
+OLED_SPI_init <= USED 0
+OLED_SPI_p6x8str <= USED 0
+OLED_SPI_p8x16str <= USED 0
+OLED_SPI_putpixel <= USED 0
+;FILE lyx_pwm.o
+pwm_duty <= USED 0
+pwm_init <= USED 0
+;FILE lyx_spi.o
+SPI_OLED_init <= USED 0
+SPI_Start <= USED 0
+SPI_Stop <= USED 0
+;FILE lyx_ws2812b.o
+ws2812_pwm_int <= USED 0
+ws2812_send_0 <= USED 0
+ws2812_send_1 <= USED 0
+ws2812_send_RGB <= USED 0
+ws2812_send_bit <= USED 0
+ws2812_send_rest <= USED 0
+;FILE main.o
+main <= USED 0
+;FILE mem.o
+rt_calloc <= USED 0
+rt_memory_info <= USED 0
+rt_realloc <= USED 0
+;FILE object.o
+rt_object_detach <= USED 0
+rt_object_find <= USED 0
+rt_object_get_length <= USED 0
+rt_object_get_pointers <= USED 0
+rt_object_get_type <= USED 0
+rt_object_is_systemobject <= USED 0
+rt_system_object_init <= USED 0
+;FILE scheduler.o
+rt_critical_level <= USED 0
+;FILE startup_stm32f10x_md.o
+;FILE system_stm32f10x.o
+SystemCoreClockUpdate <= USED 0
+;FILE test.o
+Delay_300uS <= USED 0
+Delay_850nS <= USED 0
+WS2812B_Reset <= USED 0
+WS2812B_WriteByte <= USED 0
+;FILE thread.o
+rt_thread_control <= USED 0
+rt_thread_delay <= USED 0
+rt_thread_delay_until <= USED 0
+rt_thread_delete <= USED 0
+rt_thread_detach <= USED 0
+rt_thread_exit <= USED 0
+rt_thread_find <= USED 0
+rt_thread_mdelay <= USED 0
+rt_thread_sleep <= USED 0
+rt_thread_timeout <= USED 0
+rt_thread_yield <= USED 0
+;FILE timer.o
+rt_timer_check <= USED 0
+rt_timer_create <= USED 0
+rt_timer_delete <= USED 0
+rt_timer_detach <= USED 0
+rt_timer_next_timeout_tick <= USED 0
