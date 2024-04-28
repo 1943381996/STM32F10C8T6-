@@ -1,0 +1,1262 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LYX LYX, LYX, LIC=DSNXV-PME2U-WKWB8-35M7Y-VFY8G-TRI7I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.33.0.0
+Toolchain Path:  D:\keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\±œ—“Ô€\Desktop\π§≥Ãƒ£∞Â\STM32F103C8T6-LYX\STM32F103C8T6_LYX_OPEN.uvprojx
+Project File Date:  11/25/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'D:\keil\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Libraries/STM32F10x_StdPeriph_Driver/src/misc.c(99): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/misc.c(117): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/misc.c(159): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/misc.c(178): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_NVIC_LP(LowPowerMode));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/misc.c(202): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+  ^
+5 warnings generated.
+compiling misc.c...
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling stm32f10x_crc.c...
+Libraries/CMSIS/core_cm3.c(445): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+Libraries/CMSIS/core_cm3.c(442): note: attribute is here
+uint32_t __get_PSP(void) __attribute__( ( naked ) );
+                                          ^
+Libraries/CMSIS/core_cm3.c(465): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfProcStack) );
+                                             ^
+Libraries/CMSIS/core_cm3.c(461): note: attribute is here
+void __set_PSP(uint32_t topOfProcStack) __attribute__( ( naked ) );
+                                                         ^
+Libraries/CMSIS/core_cm3.c(479): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+Libraries/CMSIS/core_cm3.c(476): note: attribute is here
+uint32_t __get_MSP(void) __attribute__( ( naked ) );
+                                          ^
+Libraries/CMSIS/core_cm3.c(499): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfMainStack) );
+                                             ^
+Libraries/CMSIS/core_cm3.c(495): note: attribute is here
+void __set_MSP(uint32_t topOfMainStack) __attribute__( ( naked ) );
+                                                         ^
+4 errors generated.
+compiling core_cm3.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c(137): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DBGMCU_PERIPH(DBGMCU_Periph));
+  ^
+1 warning generated.
+compiling stm32f10x_dbgmcu.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(140): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CEC_BIT_TIMING_ERROR_MODE(CEC_InitStruct->CEC_BitTimingMode)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(167): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(189): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(202): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CEC_ADDRESS(CEC_OwnAddress));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(216): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CEC_PRESCALER(CEC_Prescaler));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(265): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(297): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CEC_GET_FLAG(CEC_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(354): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CEC_CLEAR_FLAG(CEC_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(378): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+   assert_param(IS_CEC_GET_IT(CEC_IT));
+   ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(413): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CEC_GET_IT(CEC_IT));
+  ^
+10 warnings generated.
+compiling stm32f10x_cec.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(137): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_BKP_TAMPER_PIN_LEVEL(BKP_TamperPinLevel));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(150): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(163): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(184): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_BKP_RTC_OUTPUT_SOURCE(BKP_RTCOutputSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(205): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_BKP_CALIBRATION_VALUE(CalibrationValue));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(227): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_BKP_DR(BKP_DR));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(246): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_BKP_DR(BKP_DR));
+  ^
+7 warnings generated.
+compiling stm32f10x_bkp.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(121): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_TRIGGER(DAC_InitStruct->DAC_Trigger));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(176): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(236): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(263): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(287): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(317): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(347): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_ALIGN(DAC_Align));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(372): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_ALIGN(DAC_Align));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(401): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_ALIGN(DAC_Align));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(435): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+10 warnings generated.
+compiling stm32f10x_dac.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(125): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(159): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(296): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_FILTER_NUMBER(CAN_FilterInitStruct->CAN_FilterNumber));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(431): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_BANKNUMBER(CAN_BankNumber));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(454): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(484): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(519): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(594): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(646): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(674): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(723): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(747): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(782): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(861): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(888): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(927): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(951): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(971): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(1006): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(1048): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(1147): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(1207): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(1309): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+23 warnings generated.
+compiling stm32f10x_can.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(182): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(223): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(302): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(327): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_DMA_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(357): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(382): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(396): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(420): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(434): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(460): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(485): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(514): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(539): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(594): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(689): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(711): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(737): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(763): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(803): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(827): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(852): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(877): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(934): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(998): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1030): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1057): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1086): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1111): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1149): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1170): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1199): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1231): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1252): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(1287): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+34 warnings generated.
+compiling stm32f10x_adc.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(111): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(207): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(297): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(329): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(356): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(374): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(439): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_GET_FLAG(DMAy_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(526): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_CLEAR_FLAG(DMAy_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(601): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_GET_IT(DMAy_IT));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(687): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_CLEAR_IT(DMAy_IT));
+  ^
+10 warnings generated.
+compiling stm32f10x_dma.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(106): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_MODE(EXTI_InitStruct->EXTI_Mode));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(174): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(190): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(212): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(229): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(252): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  ^
+6 warnings generated.
+compiling stm32f10x_exti.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(259): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_LATENCY(FLASH_Latency));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(284): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_HALFCYCLEACCESS_STATE(FLASH_HalfCycleAccess));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(303): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_PREFETCHBUFFER_STATE(FLASH_PrefetchBuffer));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(423): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Page_Address));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(687): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Address));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(862): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Address));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(933): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_DATA_ADDRESS(Address));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(982): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_WRPROT_PAGE(FLASH_Pages));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(1053): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(1123): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_IWDG_SOURCE(OB_IWDG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(1325): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_IT(FLASH_IT)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(1402): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG)) ;
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(1462): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_CLEAR_FLAG(FLASH_FLAG)) ;
+  ^
+13 warnings generated.
+compiling stm32f10x_flash.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(105): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(132): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(179): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NORSRAM_BANK(FSMC_NORSRAMInitStruct->FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(267): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param( IS_FSMC_NAND_BANK(FSMC_NANDInitStruct->FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(331): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_WAIT_FEATURE(FSMC_PCCARDInitStruct->FSMC_Waitfeature));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(477): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(503): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(540): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(566): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(639): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(703): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(750): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(788): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(836): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+  ^
+14 warnings generated.
+compiling stm32f10x_fsmc.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(111): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(178): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(286): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(308): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(324): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(346): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(361): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(377): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(397): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(420): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(437): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(466): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_EVENTOUT_PORT_SOURCE(GPIO_PortSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(486): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(554): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_REMAP(GPIO_Remap));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(613): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_EXTI_PORT_SOURCE(GPIO_PortSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(632): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ETH_MEDIA_INTERFACE(GPIO_ETH_MediaInterface)); 
+  ^
+16 warnings generated.
+compiling stm32f10x_gpio.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(165): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(198): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(325): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(349): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(373): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(397): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(421): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(445): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(470): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(495): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(519): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(548): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(573): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(586): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(604): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(641): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(661): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(699): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(727): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(751): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(782): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(806): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(828): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(843): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(867): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(893): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(1037): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(1084): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(1139): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(1216): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(1252): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(1311): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+32 warnings generated.
+compiling stm32f10x_i2c.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c(95): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_WRITE_ACCESS(IWDG_WriteAccess));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c(115): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_PRESCALER(IWDG_Prescaler));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c(128): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_RELOAD(Reload));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c(165): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_FLAG(IWDG_FLAG));
+  ^
+4 warnings generated.
+compiling stm32f10x_iwdg.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(127): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(140): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(162): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_PVD_LEVEL(PWR_PVDLevel));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(181): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(201): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_REGULATOR(PWR_Regulator));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(265): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(290): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_CLEAR_FLAG(PWR_FLAG));
+  ^
+7 warnings generated.
+compiling stm32f10x_pwr.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(273): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_HSE(RCC_HSE));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(338): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_CALIBRATION_VALUE(HSICalibrationValue));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(357): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(383): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(404): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(568): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_SYSCLK_SOURCE(RCC_SYSCLKSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(612): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_HCLK(RCC_SYSCLK));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(638): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PCLK(RCC_HCLK));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(664): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PCLK(RCC_HCLK));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(703): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_IT(RCC_IT));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(731): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_USBCLK_SOURCE(RCC_USBCLKSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(770): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_ADCCLK(RCC_PCLK2));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(832): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_LSE(RCC_LSE));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(865): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(882): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_RTCCLK_SOURCE(RCC_RTCCLKSource));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(896): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1067): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB_PERIPH(RCC_AHBPeriph));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1098): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1129): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1188): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1219): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1240): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1253): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1285): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_MCO(RCC_MCO));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1332): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_FLAG(RCC_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1406): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_GET_IT(RCC_IT));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(1451): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_CLEAR_IT(RCC_IT));
+  ^
+27 warnings generated.
+compiling stm32f10x_rcc.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(93): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_IT(RTC_IT));  
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(163): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_PRESCALER(PrescalerValue));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(249): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_GET_FLAG(RTC_FLAG)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(276): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CLEAR_FLAG(RTC_FLAG)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(295): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_GET_IT(RTC_IT)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(321): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_IT(RTC_IT));  
+  ^
+6 warnings generated.
+compiling stm32f10x_rtc.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(186): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CLOCK_EDGE(SDIO_InitStruct->SDIO_ClockEdge));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(238): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(254): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_POWER_STATE(SDIO_PowerState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(310): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_IT(SDIO_IT));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(334): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(351): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CMD_INDEX(SDIO_CmdInitStruct->SDIO_CmdIndex));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(417): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_RESP(SDIO_RESP));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(436): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_DATA_LENGTH(SDIO_DataInitStruct->SDIO_DataLength));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(532): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(546): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(562): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_READWAIT_MODE(SDIO_ReadWaitMode));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(576): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(590): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(604): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(617): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(630): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(671): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_FLAG(SDIO_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(707): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CLEAR_FLAG(SDIO_FLAG));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(748): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_GET_IT(SDIO_IT));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(782): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CLEAR_IT(SDIO_IT));
+  ^
+20 warnings generated.
+compiling stm32f10x_sdio.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(122): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(163): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));   
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(227): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_23_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(430): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(454): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_23_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(486): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(524): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(550): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(566): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(584): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(608): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(634): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(650): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(666): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(693): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(717): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(735): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(770): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(807): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(835): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(887): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+21 warnings generated.
+compiling stm32f10x_spi.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c(122): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_PRESCALER(WWDG_Prescaler));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c(142): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_WINDOW_VALUE(WindowValue));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c(173): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_COUNTER(Counter));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c(188): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_COUNTER(Counter));
+  ^
+4 warnings generated.
+compiling stm32f10x_wwdg.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(133): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(184): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(306): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_123_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(354): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(393): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(451): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(479): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(502): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(521): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(550): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(569): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(595): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(612): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(628): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(644): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_123_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(664): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(683): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_123_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(708): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_123_PERIPH(USARTx));  
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(734): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(765): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(792): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(821): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(840): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(878): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(926): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(961): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(1034): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+27 warnings generated.
+compiling stm32f10x_usart.c...
+compiling main.c...
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(125): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(231): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(284): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(367): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(449): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(528): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(590): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_CHANNEL(TIM_ICInitStruct->TIM_Channel));  
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(659): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(715): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(809): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(834): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(875): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(912): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(940): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(967): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST9_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(992): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1011): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1039): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1080): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1121): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1153): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1179): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1203): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1233): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1272): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST5_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1319): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1343): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1367): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1391): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1412): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1436): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1461): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1486): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST5_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1513): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1538): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1562): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1586): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1610): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1636): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1661): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1686): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1711): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1737): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1761): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1785): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1809): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1832): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1856): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1879): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1903): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1927): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1951): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(1979): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2009): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2051): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2095): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2123): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2147): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2173): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2205): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST7_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2228): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2249): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2267): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2281): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2295): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2309): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2323): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2337): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2356): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2378): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2400): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2422): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2444): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2460): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2473): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2486): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2499): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2512): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2525): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2560): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2603): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2637): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(2679): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+83 warnings generated.
+compiling stm32f10x_tim.c...
+".\Objects\STM32F103C8T6_LYX_OPEN.axf" - 4 Error(s), 380 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>
